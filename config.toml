@@ -3,7 +3,6 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Okkur - Syna"
 theme = "syna"
-themesDir = "../.."
 copyright = "" # default: Copyright $Year $params.name
 
 # Google Analytics tracking
