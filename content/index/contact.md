@@ -12,8 +12,8 @@ title = "Contact fragment"
 subtitle  = "*not working on demo page*"
 
 # PostURL can be used with backends such as mailout from caddy
-postURL = "https://example.com/mailout" #default: formspree.io
-email = "mail@example.com"
+posturl = "https://api.formbucket.com/f/buk_erxTDecOse8T6NbO5JOx6wgz"
+email = "mpourismaiel@gmail.com"
 button = "Send Button" # defaults to theme default
 
 [message]
