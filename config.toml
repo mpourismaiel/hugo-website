@@ -57,8 +57,8 @@ googleAnalytics = ""
     disabled = false
 
   # Optional google captcha
-  #[params.contact.captcha]
-  #  sitekey = ""
+  [params.contact.captcha]
+   sitekey = "6Lc6KCcUAAAAANZQGIvpE03XEg_4PJl5Tjq7OgnN"
 
 [[menu.main]]
   url = "#"
