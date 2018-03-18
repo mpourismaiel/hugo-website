@@ -6,7 +6,7 @@ lastmod = "2017-09-10"
 weight = 1100
 #background = "light"
 selfLink = "contact-fragment"
-formName = "defaultContact"
+form_name = "defaultContact"
 
 title = "Contact fragment"
 subtitle  = "*not working on demo page*"
@@ -15,6 +15,7 @@ subtitle  = "*not working on demo page*"
 posturl = "https://api.formbucket.com/f/buk_erxTDecOse8T6NbO5JOx6wgz"
 email = "mpourismaiel@gmail.com"
 button = "Send Button" # defaults to theme default
+netlify = true
 
 [message]
   success = "Thank you for awesomely contacting us." # defaults to theme default
