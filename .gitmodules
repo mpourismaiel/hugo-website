@@ -1,3 +1,3 @@
-[submodule "themes/syna"]
+[submodule "syna"]
 	path = themes/syna
-	url = git@github.com:mpourismaiel/syna.git
+	url = https://github.com/mpourismaiel/syna
