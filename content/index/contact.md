@@ -5,17 +5,21 @@ date = "2017-09-10"
 lastmod = "2017-09-10"
 weight = 1100
 #background = "light"
-selfLink = "contact-fragment"
+self_link = "contact-fragment"
 form_name = "defaultContact"
 
 title = "Contact fragment"
 subtitle  = "*not working on demo page*"
 
 # PostURL can be used with backends such as mailout from caddy
-posturl = "https://api.formbucket.com/f/buk_erxTDecOse8T6NbO5JOx6wgz"
-email = "mpourismaiel@gmail.com"
+post_url = "https://example.com/mailout" #default: formspree.io
+email = "mail@example.com"
 button = "Send Button" # defaults to theme default
-netlify = false
+#netlify = false
+
+# Optional google captcha
+#[recaptcha]
+#  sitekey = ""
 
 [message]
   success = "Thank you for awesomely contacting us." # defaults to theme default

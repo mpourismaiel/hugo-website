@@ -5,7 +5,7 @@ date = "2017-10-10"
 lastmod = "2017-10-10"
 weight = 500
 background = "light"
-selfLink = "table-fragment"
+self_link = "table-fragment"
 
 title = "Table Fragment"
 subtitle= "Tables are responsive by default"
@@ -14,15 +14,18 @@ subtitle= "Tables are responsive by default"
 [header]
   [[header.values]]
     text = "Header 1"
+    # hide_on_mobile = true
 
   [[header.values]]
     text = "Header 2"
 
   [[header.values]]
     text = "Header 3"
+    hide_on_mobile = true
 
   [[header.values]]
     text = "Header 4"
+    hide_on_mobile = true
 
   [[header.values]]
     text = "Header 5"

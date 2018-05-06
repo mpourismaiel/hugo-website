@@ -3,6 +3,7 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Okkur - Syna"
 theme = "syna"
+themesDir = "themes"
 copyright = "" # default: Copyright $Year $params.name
 
 # Google Analytics tracking
@@ -11,7 +12,6 @@ googleAnalytics = ""
 [params]
   name = "Okkur Labs"
   description = "Open Source Theme for your next project"
-  attribution = "true"
 
   # Branding options
   [params.branding]
@@ -40,10 +40,10 @@ googleAnalytics = ""
     icon = "fa-github" # defaults: "fa-github"
 
   # Piwik tracking
-  # [params.analytics.piwik]
-  #   url = "https://stats.example.com"
-  #   id = "42"
-  #   domain = "www.example.com" # Track subdomains via "*.example.com"
+  [params.analytics.piwik]
+    url = "https://use.okkur.net"
+    id = "13"
+    domain = "syna-demo.okkur.io" # Track subdomains via "*.example.com"
     # Optional hash for integrity check
     #hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
 
@@ -56,9 +56,9 @@ googleAnalytics = ""
   [params.fontawesome]
     disabled = false
 
-  # Optional google captcha
-  [params.contact.captcha]
-   sitekey = "6Lc6KCcUAAAAANZQGIvpE03XEg_4PJl5Tjq7OgnN"
+  # [params.navbar]
+  #   Force navbar to be displayed even if no menu items are available
+  #   force_display = true
 
 [[menu.main]]
   url = "#"
@@ -85,16 +85,6 @@ googleAnalytics = ""
   name = "Link"
   weight = 30
 
-[[menu.legalFooter]]
-  url = "/about"
-  name = "About Us"
-  weight = 10
-
-[[menu.legalFooter]]
-  url = "#"
-  name = "Another Link"
-  weight = 30
-
 [[menu.footer]]
   url = "#"
   name = "Link"
@@ -110,13 +100,23 @@ googleAnalytics = ""
   name = "Tiny Link"
   weight = 30
 
-[[menu.footerSocial]]
+[[menu.copyright_footer]]
+  url = "/about"
+  name = "About Us"
+  weight = 10
+
+[[menu.copyright_footer]]
+  url = "#"
+  name = "Another Link"
+  weight = 30
+
+[[menu.footer_social]]
   weight = 20
   name = "facebook"
   pre = "fa-facebook-f"
   url = "#"
 
-[[menu.footerSocial]]
+[[menu.footer_social]]
   weight = 30
   name = "linkedin"
   pre = "fa-linkedin-in"
