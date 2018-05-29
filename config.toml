@@ -3,8 +3,9 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Okkur - Syna"
 theme = "syna"
-themesDir = "../.."
+themesDir = "themes"
 copyright = "" # default: Copyright $Year $params.name
+enableGitInfo = true
 
 # Google Analytics tracking
 googleAnalytics = ""
@@ -13,31 +14,19 @@ googleAnalytics = ""
   name = "Okkur Labs"
   description = "Open Source Theme for your next project"
 
-  # Branding options
-  [params.branding]
-    logoNavigation = "logo.svg"
-    textNavigation = "Syna"
-
   [params.style]
     #background = "secondary"
-    #backgroundNavigation = "light" # white, light, secondary, primary, dark - default: dark
-    #backgroundFooter = "light" # white, light, secondary, primary, dark - default: dark
+    #background_navigation = "light" # white, light, secondary, primary, dark - default: dark
 
   # Theme customizations
   # Assets relative to 'static/'
   [params.custom]
     favicon = "favicon.ico"
-    faviconICOSizes = "16x16 32x32"
-    faviconPNG = "favicon.png"
-    faviconSVG = "favicon.svg"
-    css = ["css/overwrite-color.min.css", "css/overwrite-reboot.min.css"]
+    favicon_ico_sizes = "16x16 32x32"
+    favicon_png = "favicon.png"
+    favicon_svg = "favicon.svg"
+    css = []
     js  = []
-
-  # Repository Button
-  [params.repoButton]
-    url = "https://github.com/okkur/syna"
-    text = "Star" # default: "Star"
-    icon = "fa-github" # defaults: "fa-github"
 
   # Piwik tracking
   [params.analytics.piwik]
@@ -56,10 +45,13 @@ googleAnalytics = ""
   [params.fontawesome]
     disabled = false
 
-  # [params.navbar]
-  #   Force navbar to be displayed even if no menu items are available
-  #   force_display = true
+[frontmatter]
+date = ["date", "lastmod"]
+lastmod = ["lastmod", ":git", "date"]
 
+# main/prepend/postpend menus are displayed in nav fragment.
+# Keep an eye out for updates. These will be moved out to make navbar more
+# configurable.
 [[menu.main]]
   url = "#"
   name = "Long Link"
@@ -76,7 +68,7 @@ googleAnalytics = ""
   weight = 30
 
 [[menu.main]]
-  url = "#contact-fragment"
+  url = "#contact"
   name = "Contact"
   weight = 50
 
